@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace CSLight
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string name;
+            string pidorApproved;
+
+
+            Console.WriteLine("Как тебя зовут?");
+            name = Console.ReadLine();
+            
+
+            Console.WriteLine($"Привет, {name}. Ты пидор?");
+
+            pidorApproved = Console.ReadLine();
+            if (pidorApproved == "да")
+            {
+                Console.WriteLine("Welcome to the club, buddy!");
+            }
+
+            else if (pidorApproved == "нет")
+            {
+                Console.WriteLine($"Поздравляю, {name}, теперь ты пидор!");
+                Console.WriteLine("Welcome to the club, buddy!");
+            }
+            
+
+
+
+        }   
+}
+}
